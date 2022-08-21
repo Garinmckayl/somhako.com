@@ -18,7 +18,7 @@ export default function Hero() {
 
             <div className="flex flex-col items-start space-x-3 space-y-3 sm:space-y-0 sm:items-center sm:flex-row">
               <a
-                href="https://github.com/web3templates"
+                // href="https://github.com/web3templates"
                 target="_blank"
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
