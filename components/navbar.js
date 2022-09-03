@@ -5,7 +5,7 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 import { Fragment } from "react";
 
 export default function Navbar() {
-  const navigation = ["Features", "Pricing", "Team", "Blog"];
+  const navigation = ["Features", "Protocol", "Team", "Blog"];
   const solutions = [
     {
       name: "Somhako ATS",
