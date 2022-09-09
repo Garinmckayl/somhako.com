@@ -5,7 +5,7 @@ import { ChevronUpIcon } from "@heroicons/react/solid";
 
 export default function Faq() {
   return (
-    <Container className="!p-0">
+    <div className="container p-8 px-4 mx-auto">
       <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
         {faqdata.map((item, index) => (
           <div key={item.question} className="mb-5">
@@ -29,7 +29,7 @@ export default function Faq() {
           </div>
         ))}
       </div>
-    </Container>
+    </div>
   );
 }
 

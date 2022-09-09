@@ -8,7 +8,7 @@ import userThreeImg from "../public/img/user3.jpg";
 
 export default function Testimonials() {
   return (
-    <Container>
+    <div className="container p-8 px-4 mx-auto">
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
@@ -53,7 +53,7 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   );
 }
 

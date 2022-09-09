@@ -5,7 +5,7 @@ import HeroSvgComponent from "../public/img/hero.js";
 export default function Hero() {
   return (
     <>
-      <Container className="flex flex-wrap ">
+      <div className="container p-8 px-4 mx-auto flex flex-wrap">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
@@ -42,8 +42,8 @@ export default function Hero() {
             <HeroSvgComponent />
           </div>
         </div>
-      </Container>
-      <Container>
+      </div>
+      <div className="container p-8 px-4 mx-auto">
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
             Trusted by <span className="text-indigo-600">industry</span> leaders
@@ -96,7 +96,7 @@ export default function Hero() {
             </div> */}
           </div>
         </div>
-      </Container>
+      </div>
     </>
   );
 }

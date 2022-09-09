@@ -6,23 +6,23 @@ export default function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Team", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
-    <div className="relative">
-      <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
+    <footer className="relative border-t border-gray-100 dark:border-trueGray-700">
+      <div className="container p-8 px-4 mx-auto">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div>
               {" "}
               <Link href="/">
-                <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                  {/* <span>
+                <a className="flex items-center space-x-2 text-4xl font-semibold text-indigo-500 dark:text-gray-100">
+                  <span>
                     <img
-                      src="/img/logo.svg"
+                      src="/img/favicon.ico"
                       alt="N"
                       width="32"
                       height="32"
                       className="w-8"
                     />
-                  </span> */}
+                  </span>
                   <span>Somhako</span>
                 </a>
               </Link>
@@ -95,8 +95,8 @@ export default function Footer() {
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}.Somhako
         </div>
-      </Container>
-    </div>
+      </div>
+    </footer>
   );
 }
 

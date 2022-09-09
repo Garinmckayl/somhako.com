@@ -29,14 +29,14 @@ export default function Navbar() {
 
   function Products() {
     return (
-      <div className="w-full max-w-sm px-4">
+      <div className="w-full">
         <Popover className="relative">
           {({ open }) => (
             <>
               <Popover.Button
                 className={`
                   ${open ? "" : "text-opacity-90"}
-                  group inline-flex items-center rounded-md bg-orange-700 px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+                  group inline-flex items-center rounded-md bg-orange-700 px-4 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
               >
                 <span>Products</span>
                 <ChevronDownIcon
@@ -66,7 +66,7 @@ export default function Navbar() {
                           <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
                             <item.icon aria-hidden="true" />
                           </div>
-                          <div className="ml-4">
+                          <div className="ml-4 text-left">
                             <p className="text-sm font-medium text-gray-900">
                               {item.name}
                             </p>
@@ -82,7 +82,7 @@ export default function Navbar() {
                         href="##"
                         className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                       >
-                        <span className="flex items-center">
+                        <span className="flex items-center justify-center">
                           <span className="text-sm font-medium text-gray-900">
                             Documentation
                           </span>
@@ -103,25 +103,25 @@ export default function Navbar() {
   }
 
   return (
-    <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+    <header className="w-full">
+      <nav className="container relative flex flex-wrap items-center justify-between p-8 px-4 mx-auto lg:justify-between">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                    {/* <span>
+                  <a className="flex items-center space-x-2 text-4xl font-semibold text-indigo-500 dark:text-gray-100">
+                    <span>
                       <img
-                        src="/img/logo.svg"
+                        src="/img/favicon.ico"
                         alt="N"
                         width="32"
                         height="32"
                         className="w-8"
                       />
-                    </span> */}
-                    <span>SOMHAKO</span>
+                    </span>
+                    <span>Somhako</span>
                   </a>
                 </Link>
 
@@ -156,7 +156,7 @@ export default function Navbar() {
 
                     {navigation.map((item, index) => (
                       <Link key={index} href="/">
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                        <a className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
                           {item}
                         </a>
                       </Link>
@@ -189,7 +189,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <div className="hidden mr-3 space-x-3 lg:flex nav__item">
+        <div className="hidden space-x-3 lg:flex nav__item">
           <Link href="/">
             <a className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
               Get Started
@@ -199,7 +199,7 @@ export default function Navbar() {
           <ThemeChanger />
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 

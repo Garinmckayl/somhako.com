@@ -47,7 +47,7 @@ export default function PopupWidget() {
   };
 
   return (
-    <div>
+    <div className="chatFloatingBtn">
       <Disclosure>
         {({ open }) => (
           <>
