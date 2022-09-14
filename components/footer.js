@@ -13,7 +13,7 @@ export default function Footer() {
             <div>
               {" "}
               <Link href="/">
-                <a className="flex items-center space-x-2 text-4xl font-semibold text-indigo-500 dark:text-gray-100">
+                <a className="flex items-center space-x-2 text-4xl font-semibold text-indigo-700 dark:text-gray-100">
                   <span>
                     <img
                       src="/img/favicon.ico"
@@ -36,57 +36,49 @@ export default function Footer() {
           </div>
 
           <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+            {/* <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
                 <Link key={index} href="/">
-                  <a className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                  <a className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-700 focus:text-indigo-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
                     {item}
                   </a>
                 </Link>
               ))}
-            </div>
+            </div> */}
           </div>
           <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+            {/* <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
                 <Link key={index} href="/">
-                  <a className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                  <a className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-700 focus:text-indigo-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
                     {item}
                   </a>
                 </Link>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className="">
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a
-                // href="https://twitter.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Twitter</span>
-                <Twitter />
-              </a>
-              <a
-                // href="https://facebook.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Facebook</span>
-                <Facebook />
-              </a>
-              <a
-                // href="https://instagram.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Instagram</span>
-                <Instagram />
-              </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
-                <span className="sr-only">Linkedin</span>
+              <a href="https://www.linkedin.com/company/somhako/?viewAsMember=true" target="_blank" rel="noopener">
                 <Linkedin />
+                <span className="sr-only">Linkedin</span>
+              </a>
+              {/* <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+              >
+                <Facebook />
+                <span className="sr-only">Facebook</span>
+              </a> */}
+              <a
+                href="https://discord.gg/XkajwnGG"
+                target="_blank"
+                rel="noopener"
+              >
+                <Discord />
+                <span className="sr-only">Discord</span>
               </a>
             </div>
           </div>
@@ -145,4 +137,32 @@ const Linkedin = ({ size = 24 }) => (
   >
     <path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62V20.1zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.02 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.45-.52-2.45-1.83-2.45-1 0-1.6.67-1.87 1.32-.1.23-.11.55-.11.88v6.05H9.28s.05-9.82 0-10.84h3.63v1.54a3.6 3.6 0 0 1 3.26-1.8c2.39 0 4.18 1.56 4.18 4.89v6.21z" />
   </svg>
+);
+
+const Discord = ({ size = 26 }) => (
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+  width={size}
+    height={size} viewBox="0 0 232.000000 232.000000"
+  preserveAspectRatio="xMidYMid meet" fill="currentColor">
+
+  <g transform="translate(0.000000,232.000000) scale(0.100000,-0.100000)"
+  fill="currentColor" stroke="none">
+  <path d="M970 2305 c-171 -30 -372 -116 -507 -217 -245 -185 -412 -474 -454
+  -785 -14 -103 -7 -278 15 -378 76 -351 298 -639 616 -800 502 -253 1108 -110
+  1452 344 64 85 151 262 182 372 81 286 55 563 -78 834 -166 336 -481 569 -856
+  631 -103 17 -268 17 -370 -1z m-16 -592 l17 -38 179 0 179 0 17 38 c9 20 20
+  37 23 37 26 -1 152 -36 225 -62 84 -31 91 -36 121 -83 50 -77 112 -207 140
+  -289 43 -127 56 -205 62 -372 l6 -160 -84 -54 c-92 -59 -240 -128 -291 -136
+  -31 -5 -35 -2 -70 55 -21 34 -38 64 -38 68 1 5 28 20 62 36 45 20 59 30 50 39
+  -8 8 -29 4 -80 -15 -202 -75 -442 -75 -644 0 -51 19 -72 23 -80 15 -9 -9 5
+  -19 50 -39 34 -16 61 -31 62 -36 1 -21 -77 -127 -93 -127 -22 0 -178 63 -227
+  92 -19 12 -63 39 -97 61 l-63 39 0 123 c0 251 69 487 202 695 33 51 41 57 113
+  84 68 26 200 63 231 65 6 1 19 -16 28 -36z"/>
+  <path d="M829 1237 c-84 -56 -91 -176 -14 -247 21 -20 37 -25 80 -25 60 0 97
+  25 121 82 41 95 -27 213 -121 213 -18 0 -47 -10 -66 -23z"/>
+  <path d="M1339 1237 c-84 -56 -91 -176 -14 -247 21 -20 37 -25 80 -25 60 0 97
+  25 121 82 41 95 -27 213 -121 213 -18 0 -47 -10 -66 -23z"/>
+  </g>
+  </svg>
+
 );

@@ -45,7 +45,7 @@ export default function Home() {
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-      <SectionTitle
+      {/* <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"
       >
@@ -63,9 +63,9 @@ export default function Home() {
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
         ventore veritatis et quasi architecventore veritatis et quasi architec
-      </SectionTitle>
-      <Faq />
-      <Cta />
+      </SectionTitle> */}
+      {/* <Faq /> */}
+      {/* <Cta /> */}
       <Footer />
       <PopupWidget />
     </>
