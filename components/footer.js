@@ -4,7 +4,6 @@ import Container from "./container";
 
 export default function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Team", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
   return (
     <footer className="relative border-t border-gray-100 dark:border-trueGray-700">
       <div className="container p-8 px-4 mx-auto">
@@ -57,9 +56,9 @@ export default function Footer() {
               ))}
             </div> */}
           </div>
-          <div className="">
+          <div className="lg:text-right">
             <div>Follow us</div>
-            <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
+            <div className="flex lg:justify-end mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a href="https://www.linkedin.com/company/somhako/?viewAsMember=true" target="_blank" rel="noopener">
                 <Linkedin />
                 <span className="sr-only">Linkedin</span>
@@ -83,9 +82,19 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}.Somhako
+      </div>
+      <div className="container px-4 py-2 mx-auto">
+        <div className="lg:grid grid-cols-2 gap-4 align-middle">
+          <p className="text-center lg:text-left text-sm text-gray-600 dark:text-gray-400">
+            Copyright © {new Date().getFullYear()}.Somhako
+          </p>
+          <aside className="flex justify-center lg:justify-end">
+            <Link href="/privacy-policy">
+              <a className="text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-700 focus:text-indigo-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                Privacy Policy
+              </a>
+            </Link>
+          </aside>
         </div>
       </div>
     </footer>
