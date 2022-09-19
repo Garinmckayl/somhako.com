@@ -11,25 +11,20 @@ import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "ventore veritatis et quasi architecventore veritatis et quasi architecventore veritatis et quasi architecventore veritatis et quasi architecventore veritatis et quasi architec",
+  title: "Join our Discord Community ",
+  desc: "",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Build awesome teams ",
+      desc: "Connect with your network through our community and build teams, reward, learn and refer. A platform beyond just hiring. ",
       icon: <EmojiHappyIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Reward for all ",
+      desc: "By revealing your profile identity, engaging, referring, and learning, users can earn reward. ",
       icon: <ChartSquareBarIcon />,
-    },
-    {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorClickIcon />,
-    },
+    }
   ],
 };
 

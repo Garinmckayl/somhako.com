@@ -111,17 +111,13 @@ export default function Navbar() {
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <a className="flex items-center space-x-2 text-4xl font-semibold text-indigo-700 dark:text-gray-100">
+                  <a className="flex items-center space-x-2 max-w-[150px] md:max-w-[220px]">
                     <span>
                       <img
-                        src="/img/favicon.ico"
-                        alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
+                        src="/logo.png"
+                        alt="Somhako"
                       />
                     </span>
-                    <span>Somhako</span>
                   </a>
                 </Link>
 
@@ -192,7 +188,7 @@ export default function Navbar() {
         <div className="hidden space-x-3 lg:flex nav__item">
           <Link href="/">
             <a className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-              Get Started
+            Join the waitlist
             </a>
           </Link>
 

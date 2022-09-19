@@ -36,15 +36,21 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="ventore veritatis et quasi architec"
-        title=" ventore veritatis et quasi architec"
+        pretitle="SOMHAKO"
+        title="How it is different?"
       >
-        ventore veritatis et quasi architecventore veritatis et quasi
-        architecventore veritatis et quasi architecventore veritatis et quasi
-        architec
+        SOMHAKO aims to unite the entire HR industry through a protocol-based, composable, and decentralized social graph. Somhako provides different incentives mechanisms for the growth of the Somhako marketplace by indexing and syncing candidate data on the blockchain network. 
       </SectionTitle>
       <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
+      <SectionTitle
+        pretitle="SOMHAKO"
+        title="Protocol"
+      >
+        By using Somhako protocol, users can create digital résumés on the blockchain, and data on the blockchain can be aggregated and used by other applications.<br /><br />
+        Developers can integrate Somhako Protocol to import somhako existing networks. Developers may concentrate on providing an outstanding user experience and leave growth hacking to the protocol! <br /><br />
+        Somhako protocol unlocks portability and composability across the industry.
+      </SectionTitle>
+      {/* <Benefits imgPos="right" data={benefitTwo} /> */}
       {/* <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"

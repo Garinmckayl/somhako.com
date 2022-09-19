@@ -9,31 +9,20 @@ export default function Footer() {
       <div className="container p-8 px-4 mx-auto">
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <div>
-              {" "}
-              <Link href="/">
-                <a className="flex items-center space-x-2 text-4xl font-semibold text-indigo-700 dark:text-gray-100">
-                  <span>
-                    <img
-                      src="/img/favicon.ico"
-                      alt="N"
-                      width="32"
-                      height="32"
-                      className="w-8"
-                    />
-                  </span>
-                  <span>Somhako</span>
-                </a>
-              </Link>
-            </div>
-
+            <Link href="/">
+              <a className="flex items-center space-x-2 max-w-[150px] md:max-w-[220px]">
+                <span>
+                  <img
+                    src="/logo.png"
+                    alt="Somhako"
+                  />
+                </span>
+              </a>
+            </Link>
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              ventore veritatis et quasi architecventore veritatis et quasi
-              architecventore veritatis et quasi architecventore veritatis et
-              quasi architec
+            Somhako is the first marketplace founded on the concept of "engage to earn" through your community.
             </div>
           </div>
-
           <div>
             {/* <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
@@ -86,11 +75,11 @@ export default function Footer() {
       <div className="container px-4 py-2 mx-auto">
         <div className="lg:grid grid-cols-2 gap-4 align-middle">
           <p className="text-center lg:text-left text-sm text-gray-600 dark:text-gray-400">
-            Copyright © {new Date().getFullYear()}.Somhako
+            Copyright © {new Date().getFullYear()} Somhako
           </p>
           <aside className="flex justify-center lg:justify-end">
             <Link href="/privacy-policy">
-              <a className="text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-700 focus:text-indigo-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+              <a className="text-gray-500 text-sm rounded-md dark:text-gray-300 hover:text-indigo-700 focus:text-indigo-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
                 Privacy Policy
               </a>
             </Link>

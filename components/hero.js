@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "./container";
+import Link from "next/link";
 import HeroSvgComponent from "../public/img/hero.js";
 
 export default function Hero() {
@@ -8,28 +9,29 @@ export default function Hero() {
       <div className="container p-8 px-4 mx-auto flex flex-wrap">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Discover, Connect and Network Globally!
+            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white mb-4">
+            Discover, Connect & Engage 
             </h1>
+            <p className="text-2xl font-bold text-gray-800">
+            With our global talent network 
+            </p>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               Somhako is the first marketplace founded on the concept of "engage
-              to earn" through your community. Join the waitlist
+              to earn" through your community.
             </p>
 
             <div className="flex flex-col items-start space-x-3 space-y-3 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                // href="https://github.com/web3templates"
-                target="_blank"
-                rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
-              >
-                Get Started
-              </a>
+              <Link href="/">
+                <a className="px-6 py-2 text-white bg-indigo-600 rounded-md">
+                Join the waitlist
+                </a>
+              </Link>
             </div>
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="hidden lg:block">
+            <img src="/img/global.png" />
             {/* <Image
               src={heroImg}
               width="616"
@@ -39,11 +41,11 @@ export default function Hero() {
               loading="eager"
               placeholder="blur"
             /> */}
-            <HeroSvgComponent />
+            {/* <HeroSvgComponent /> */}
           </div>
         </div>
       </div>
-      <div className="container p-8 px-4 mx-auto">
+      {/* <div className="container p-8 px-4 mx-auto">
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
             Trusted by <span className="text-indigo-600">industry</span> leaders
@@ -52,7 +54,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
             <div className="pt-2 text-gray-400 dark:text-gray-400">
-              {/* <AmazonLogo /> */}
+              <AmazonLogo />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Rakuten_Global_Brand_Logo.svg/512px-Rakuten_Global_Brand_Logo.svg.png"
                 loading="lazy"
@@ -60,16 +62,16 @@ export default function Hero() {
                 alt="Rakutun Logo"
               ></img>
             </div>
-            {/* <div className="text-gray-400 dark:text-gray-400">
+            <div className="text-gray-400 dark:text-gray-400">
               <img
                 src="https://uploads-ssl.webflow.com/60be6e42ecea08f815b762c3/60d63a5e002c46ace40429f6_logo.svg"
                 loading="lazy"
                 width="120"
                 alt="Zepto Logo"
               ></img>
-            </div> */}
+            </div>
             <div className="text-gray-400 dark:text-gray-400">
-              {/* <MicrosoftLogo /> */}
+              <MicrosoftLogo />
               <img
                 src="https://parkplus.io/img/logo/parkplus_blue.svg"
                 loading="lazy"
@@ -78,7 +80,7 @@ export default function Hero() {
               ></img>
             </div>
             <div className="pt-1 text-gray-400 dark:text-gray-400">
-              {/* <NetflixLogo /> */}
+              <NetflixLogo />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DeNA_Co_logo.svg/241px-DeNA_Co_logo.svg.png"
                 loading="lazy"
@@ -86,17 +88,17 @@ export default function Hero() {
                 alt="Dena Logo"
               ></img>
             </div>
-            {/* <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <div className="pt-2 text-gray-400 dark:text-gray-400">
               <img
                 src="https://www.revcomm.co.jp/wp-content/themes/onepress/assets/images/logo/rc_logo.svg"
                 loading="lazy"
                 width="120"
                 alt="revcomm Logo"
               ></img>
-            </div> */}
+            </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
