@@ -4,6 +4,7 @@ import Container from "./container";
 export default function SectionTitle(props) {
   return (
     <div
+    id={`${props.idName}`}
       className={`container p-8 px-4 mx-auto flex w-full flex-col mt-4 ${
         props.align === "left" ? "" : "items-center justify-center text-center"
       }`}>

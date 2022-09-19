@@ -68,6 +68,14 @@ export default function Footer() {
                 <Discord />
                 <span className="sr-only">Discord</span>
               </a>
+              <a
+                href="https://twitter.com/somhako"
+                target="_blank"
+                rel="noopener"
+              >
+                <Twitter />
+                <span className="sr-only">Twitter</span>
+              </a>
             </div>
           </div>
         </div>

@@ -45,6 +45,7 @@ export default function Home() {
       <SectionTitle
         pretitle="SOMHAKO"
         title="Protocol"
+        idName="protocol"
       >
         By using Somhako protocol, users can create digital résumés on the blockchain, and data on the blockchain can be aggregated and used by other applications.<br /><br />
         Developers can integrate Somhako Protocol to import somhako existing networks. Developers may concentrate on providing an outstanding user experience and leave growth hacking to the protocol! <br /><br />
