@@ -7,8 +7,16 @@ import { Fragment } from "react";
 export default function Navbar() {
   const navigation = [
     {
+      name: "Recruitment",
+      link: "/#recruitment"
+    },
+    {
+      name: "Features",
+      link: "/#features"
+    },
+    {
       name: "Protocol",
-      link: "#protocol"
+      link: "/protocol"
     }
   ];
   const solutions = [
@@ -153,18 +161,21 @@ export default function Navbar() {
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
-                    <Products />
-
+                    {/* <Products /> */}
+                      <ul>
                     {navigation.map((item, index) => (
-                      <Link key={index} href="/">
-                        <a className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-700 focus:text-indigo-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
-                          {item}
+                      <li>
+                        <Link key={index} href={item.link}>
+                        <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-700 focus:text-indigo-700 focus:bg-indigo-100 focus:outline-none">
+                          {item.name}
                         </a>
                       </Link>
+                      </li>
                     ))}
-                    <Link href="/">
+                    </ul>
+                    <Link href="https://marketplace.somhako.com/register/">
                       <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
-                        Get Started
+                        Sign Up Now
                       </a>
                     </Link>
                   </>
@@ -191,9 +202,9 @@ export default function Navbar() {
         </div>
 
         <div className="hidden space-x-3 lg:flex nav__item">
-          <Link href="/">
-            <a className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-            Join the waitlist
+          <Link href="https://marketplace.somhako.com/register/">
+            <a className="px-6 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md md:ml-5">
+            Sign Up Now
             </a>
           </Link>
 

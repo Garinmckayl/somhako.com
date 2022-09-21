@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
-import { benefitOne, benefitTwo } from "../components/data";
+import { benefitOne} from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
@@ -37,21 +37,23 @@ export default function Home() {
       <Hero />
       <SectionTitle
         pretitle="SOMHAKO"
-        title="How it is different?"
+        title="Redefine Recruitment With Somhako"
+        idName="recruitment"
       >
-        SOMHAKO aims to unite the entire HR industry through a protocol-based, composable, and decentralized social graph. Somhako provides different incentives mechanisms for the growth of the Somhako marketplace by indexing and syncing candidate data on the blockchain network. 
+        We are the first protocol-based, decentralized social graph for the HR industry. Use it to discover global talent, access verified candidate data, and find the right fit for your company. Without any mediator, powered by blockchain.
       </SectionTitle>
-      <Benefits data={benefitOne} />
+      <Benefits idName="features" data={benefitOne} />
       <SectionTitle
         pretitle="SOMHAKO"
-        title="Protocol"
+        title="Unlock Portability Across The Industry"
         idName="protocol"
+        btn="Sign Up Now"
+        btnURL="https://marketplace.somhako.com/register/"
       >
-        By using Somhako protocol, users can create digital résumés on the blockchain, and data on the blockchain can be aggregated and used by other applications.<br /><br />
-        Developers can integrate Somhako Protocol to import somhako existing networks. Developers may concentrate on providing an outstanding user experience and leave growth hacking to the protocol! <br /><br />
-        Somhako protocol unlocks portability and composability across the industry.
+        Aggregate verified candidate data from our blockchain network and use it across your application. The Somhako protocol enables HR professionals to establish one-stop recruitment for enterprise-wide hiring. Get a more personal touch on your recruitment and onboard individuals who align with your organization's vision, values, and purpose.
+        <br /><br />
+        Don't let resources stop you from hiring the best. Let Somhako help you hire today for free!
       </SectionTitle>
-      {/* <Benefits imgPos="right" data={benefitTwo} /> */}
       {/* <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"

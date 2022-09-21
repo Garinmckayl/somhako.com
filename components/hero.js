@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Container from "./container";
 import Link from "next/link";
 import HeroSvgComponent from "../public/img/hero.js";
+// import GlobeAnimate from "./globeanimate.js";
 
 export default function Hero() {
   return (
@@ -10,28 +10,22 @@ export default function Hero() {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white mb-4">
-            Discover, Connect & Engage 
+            Are You Hiring The Right Talent?
             </h1>
-            <p className="text-2xl font-bold text-gray-800">
-            With our global talent network 
-            </p>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Somhako is the first marketplace founded on the concept of "engage
-              to earn" through your community.
+            Don't let your competitors steal the deal. Connect with our global talent network and hire the right one. 
             </p>
-
-            <div className="flex flex-col items-start space-x-3 space-y-3 sm:space-y-0 sm:items-center sm:flex-row">
-              <Link href="/">
-                <a className="px-6 py-2 text-white bg-indigo-600 rounded-md">
-                Join the waitlist
-                </a>
-              </Link>
-            </div>
+            <Link href="https://marketplace.somhako.com/register/">
+              <a className="px-6 py-2 inline-block text-white bg-indigo-600 hover:bg-indigo-700 rounded-md">
+              Get Started
+              </a>
+            </Link>
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="hidden lg:block">
-            <img src="/img/global.png" />
+            <img src="/img/global.png" alt="Somhako" />
+            {/* <GlobeAnimate /> */}
             {/* <Image
               src={heroImg}
               width="616"

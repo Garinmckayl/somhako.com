@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "./container";
+import Link from "next/link";
 
 export default function SectionTitle(props) {
   return (
@@ -24,6 +24,16 @@ export default function SectionTitle(props) {
         <p className="py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
           {props.children}
         </p>
+      )}
+
+      {props.btn && (
+      <div className="text-center pt-4">
+        <Link href={`${props.btnURL}`}>
+          <a className="px-6 py-2 inline-block text-white bg-indigo-600 hover:bg-indigo-700 rounded-md">
+          {props.btn}
+          </a>
+        </Link>
+      </div>
       )}
     </div>
   );

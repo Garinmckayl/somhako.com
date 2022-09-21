@@ -20,7 +20,7 @@ export default function Footer() {
               </a>
             </Link>
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-            Somhako is the first marketplace founded on the concept of "engage to earn" through your community.
+            We are the first protocol-based, decentralized social graph for the HR industry. Use it to discover global talent, access verified candidate data, and find the right fit for your company. Without any mediator, powered by blockchain.
             </div>
           </div>
           <div>
