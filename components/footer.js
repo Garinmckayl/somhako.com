@@ -9,16 +9,14 @@ export default function Footer() {
       <div className="container p-8 px-4 mx-auto">
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <Link href="/">
-              <a className="flex items-center space-x-2 max-w-[150px] md:max-w-[220px]">
-                <span>
-                  <img
-                    src="/logo.png"
-                    alt="Somhako"
-                  />
-                </span>
-              </a>
-            </Link>
+            <a href="/" className="flex items-center space-x-2 max-w-[150px] md:max-w-[220px]">
+              <span>
+                <img
+                  src="/logo.png"
+                  alt="Somhako"
+                />
+              </span>
+            </a>
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
             We are the first protocol-based, decentralized social graph for the HR industry. Use it to discover global talent, access verified candidate data, and find the right fit for your company. Without any mediator, powered by blockchain.
             </div>

@@ -127,16 +127,14 @@ export default function Navbar() {
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="/">
-                  <a className="flex items-center space-x-2 max-w-[150px] md:max-w-[220px]">
-                    <span>
-                      <img
-                        src="/logo.png"
-                        alt="Somhako"
-                      />
-                    </span>
-                  </a>
-                </Link>
+                <a href="/" className="flex items-center space-x-2 max-w-[150px] md:max-w-[220px]">
+                  <span>
+                    <img
+                      src="/logo.png"
+                      alt="Somhako"
+                    />
+                  </span>
+                </a>
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
@@ -168,12 +166,12 @@ export default function Navbar() {
                     {/* <Products /> */}
                       <ul>
                     {navigation.map((item, index) => (
-                      <li>
-                        <Link key={index} href={item.link}>
-                        <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-700 focus:text-indigo-700 focus:bg-indigo-100 focus:outline-none">
-                          {item.name}
-                        </a>
-                      </Link>
+                      <li key={index}>
+                        <Link href={item.link}>
+                          <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-700 focus:text-indigo-700 focus:bg-indigo-100 focus:outline-none">
+                            {item.name}
+                          </a>
+                        </Link>
                       </li>
                     ))}
                     </ul>

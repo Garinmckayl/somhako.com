@@ -701,7 +701,7 @@ export default function Hero() {
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
             {/* <img src="/img/global.png" alt="Somhako" /> */}
-            <canvas class="globe" width="1800" height="1600"></canvas>
+            <canvas className="globe" width="1800" height="1600"></canvas>
           </div>
         </div>
       </div>
