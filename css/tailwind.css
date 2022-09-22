@@ -14,3 +14,19 @@
     }
   }
 }
+
+
+.listStyle-1 li {
+	position: relative;
+	padding-left: 20px;
+}
+.listStyle-1 li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #0000ff;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
