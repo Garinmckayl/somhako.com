@@ -38,7 +38,7 @@ export default function Hero() {
     colors: {
       pushPinBase: '#969799',
       pushPin: '#ed5c50',
-      land: '#ffc975', //'#ffc975',
+      land: '#0000ff', //'#ffc975',
       landShade: '#2c606e',
       ocean: 'lightblue'
     },
