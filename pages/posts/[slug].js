@@ -1,8 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
 
 // The page for each post
 export default function Post({ frontmatter, content }) {
@@ -10,38 +8,28 @@ export default function Post({ frontmatter, content }) {
 
   return (
     <>
-      <Navbar />
-      <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
+      <article className="max-w-[1000px] px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
         <div className="w-full mx-auto space-y-4 text-center">
-          <p className="text-xs font-semibold tracking-wider uppercase">
-            #TailwindCSS
-          </p>
           <h1 className="text-4xl font-bold leading-tight md:text-5xl">
             {title}
           </h1>
           <p className="text-sm dark:text-gray-400">
-            by
+            <span className="mr-1">by</span>
             <a
               rel="noopener noreferrer"
               href="#"
               target="_blank"
-              className="underline dark:text-violet-400"
+              className="underline dark:text-violet-400 mr-1"
             >
               <span>{author}</span>
             </a>
-            on
+            <span className="mr-1">on</span>
             <time datetime="2021-02-12 15:34:18-0200">{date}</time>
           </p>
-          <img src={bannerImage} />
+          <img src={bannerImage} className="w-full" />
         </div>
-        <div className="dark:text-gray-100">
-          <p>
-            <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
-          </p>
-        </div>
+        <article className="blogSummay" dangerouslySetInnerHTML={{ __html: md().render(content) }} ></article>
       </article>
-
-      <Footer />
     </>
   );
 }

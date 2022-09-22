@@ -17,6 +17,10 @@ export default function Navbar() {
     {
       name: "Protocol",
       link: "/protocol"
+    },
+    {
+      name: "Blog",
+      link: "/blog"
     }
   ];
   const solutions = [

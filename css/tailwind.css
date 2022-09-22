@@ -30,3 +30,55 @@
     left: 0;
     top: 7px;
 }
+
+.globe {
+  height: 350px;
+  width: auto;
+  cursor: grab;
+}
+
+.globe--dragging {
+  cursor: grabbing;
+}
+
+.blogSummay h1,
+.blogSummay h2,
+.blogSummay h3,
+.blogSummay h4,
+.blogSummay h5,
+.blogSummay h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.blogSummay h1 {
+  font-size: 40px;
+}
+.blogSummay h2 {
+  font-size: 32px;
+}
+.blogSummay h3 {
+  font-size: 26px;
+}
+.blogSummay h4 {
+  font-size: 22px;
+}
+.blogSummay h5 {
+  font-size: 20px;
+}
+.blogSummay h6 {
+  font-size: 18px;
+}
+.blogSummay p {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.blogSummay a {
+  text-decoration: underline;
+  color: #0000ff;
+}
+.blogSummay ol {
+  list-style: auto;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}

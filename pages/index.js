@@ -1,12 +1,10 @@
 import Head from "next/head";
 import Hero from "../components/hero";
-import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
 import { benefitOne} from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
-import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
@@ -32,8 +30,6 @@ export default function Home() {
         <meta name="description" content="somhako" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar />
       <Hero />
       <SectionTitle
         pretitle="SOMHAKO"
@@ -75,7 +71,6 @@ export default function Home() {
       </SectionTitle> */}
       {/* <Faq /> */}
       {/* <Cta /> */}
-      <Footer />
       <PopupWidget />
     </>
   );

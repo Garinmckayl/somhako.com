@@ -1,10 +1,7 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 
 export default function Privacy() {
   return (
     <>
-      <Navbar />
         <div className="py-4 mb-4">
             <div className="container mx-auto">
                 <h1 className="text-center text-2xl font-bold mb-6">Privacy Policy</h1>
@@ -27,7 +24,6 @@ export default function Privacy() {
                 </article>
             </div>
         </div>
-      <Footer />
     </>
   );
 }

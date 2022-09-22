@@ -1,12 +1,19 @@
 import { ThemeProvider } from "next-themes";
 import "../css/tailwind.css";
-import "../css/globeanimate.css";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <>
+      <Navbar />
+      <main>
+        <ThemeProvider attribute="class">
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </main>
+      <Footer />
+    </>
   );
 }
 

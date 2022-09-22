@@ -1,5 +1,3 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 import Link from "next/link";
 import Benefits from "../components/benefits";
 import { howitworks} from "../components/data";
@@ -7,7 +5,6 @@ import { howitworks} from "../components/data";
 export default function HowItWorks() {
   return (
     <>
-      <Navbar />
       <section className="container p-8 px-4 mx-auto flex flex-wrap">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
@@ -32,7 +29,6 @@ export default function HowItWorks() {
         </div>
       </section>
       <Benefits data={howitworks} />
-      <Footer />
     </>
   );
 }
