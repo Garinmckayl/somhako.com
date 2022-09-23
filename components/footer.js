@@ -59,7 +59,7 @@ export default function Footer() {
                 <span className="sr-only">Facebook</span>
               </a> */}
               <a
-                href="https://discord.gg/XkajwnGG"
+                href="https://discord.gg/934TJUe6BF"
                 target="_blank"
                 rel="noopener"
               >
