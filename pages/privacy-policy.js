@@ -2,10 +2,12 @@
 export default function Privacy() {
   return (
     <>
-        <div className="py-4 mb-4">
+        <div className="py-10">
             <div className="container mx-auto">
-                <h1 className="text-center text-2xl font-bold mb-6">Privacy Policy</h1>
-                <article className="max-w-[1000px] mx-auto">
+                <h1 className="mb-5 text-3xl text-center lg:text-4xl tracking-tight font-extrabold text-white">
+                Privacy Policy
+                </h1>
+                <article className="max-w-[1000px] mx-auto text-white">
                     <p className="mb-3">We view protection of your privacy as a very important principle. We understand clearly that you and your personal information is one of our most important asset. We encourage you to read the privacy policies carefully.</p>
 
                     <p className="mb-3">All the information provided by you to us, including sensitive personal information, is voluntary. You have the right to withdraw your consent at any time, but please note that withdrawal of consent will not be retroactive. You can access, modify, correct and eliminate the data about you which has been collected pursuant to your decision to become a user/Member of this Website except for user id/email which is unique. If you update any information relating to you, we may keep a copy of the information which you originally provided to us in our archives.</p>

@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div className="bg-gradient-to-br from-black to-purple-900">
       <Navbar />
       <main>
         <ThemeProvider attribute="class">
@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
         </ThemeProvider>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

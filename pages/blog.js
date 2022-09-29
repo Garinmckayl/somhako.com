@@ -5,77 +5,121 @@ import Link from "next/link";
 
 // The Blog Page Content
 export default function Blog({ posts }) {
+  const features = [
+    {
+      title: "All The Features You Will Ever Need",
+      desc: "Connect with an amazing tech community and build teams globally. Let candidates learn, refer, and get rewarded for every action they take.",
+      extraClasses: 'lg:mt-[150px]',
+    },
+    {
+        title: "Smart AI-based Matchmaking",
+        desc: "Get matched with the right candidates, without worrying about the authenticity of their details. Our AI analyzes the resumes and finds the ideal candidates for the role, saving you hours of time.",
+        extraClasses: 'lg:mt-[75px]',
+    },
+    {
+        title: "Trust The Blockchain",
+        desc: "Every candidate's data is stored on our blockchain network. Access verified details and incentivize candidates directly—no intermediary, more control.",
+        extraClasses: '',
+    },
+    {
+        title: "Share Data, On Demand",
+        desc: "By revealing your profile identity, engaging, referring, and learning, users can earn reward.",
+        extraClasses: 'lg:mt-[75px]',
+    },
+    {
+        title: "Access Talents, Your Way",
+        desc: "Integrate Somhako Protocol and import all our existing networks to your platform. Let us handle the growth hacking while you focus on the user experience.",
+        extraClasses: 'lg:mt-[150px]',
+    },
+];
   return (
     <>
-      <section className="bg-white dark:bg-gray-900">
+      <section>
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-            <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            <h1 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">
               Our Blog
-            </h2>
-            <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            </h1>
+            <p className="font-light text-white sm:text-xl">
               We use an agile approach to test assumptions and connect with the
               needs of your audience early and often.
             </p>
           </div>
-          <main className="grid gap-8 lg:grid-cols-2">
-            {posts.map((post) => {
-              //extract slug and frontmatter
-              const { slug, frontmatter } = post;
-              //extract frontmatter properties
-              const { title, author, category, date, excerpt, bannerImage, tags } =
-                frontmatter;
+          <div className="max-w-[1000px] mx-auto">
+            <main className="grid gap-8 lg:grid-cols-2">
+                {posts.map((post) => {
+                  //extract slug and frontmatter
+                  const { slug, frontmatter } = post;
+                  //extract frontmatter properties
+                  const { title, author, category, date, excerpt, bannerImage, tags } =
+                    frontmatter;
 
-              //JSX for individual blog listing
-              return (
-                <article className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                    <Link href={`/posts/${slug}`}>
-                        <a className="mb-3 block">
-                          <img src={bannerImage} />
-                        </a>
-                    </Link>
-                    <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      <Link href={`/posts/${slug}`}>
-                        <a>{title}</a>
-                      </Link>
-                    </h2>
-                    <p className="mb-5 font-light">
-                      {excerpt}
-                    </p>
-                    <div className="flex justify-between items-center">
-                      <Link href={`/posts/${slug}`}>
-                        <a
-                          className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
-                        >
-                          Read more
-                          <svg
-                            className="ml-2 w-4 h-4"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </a>
-                      </Link>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">{date}</span>
+                  //JSX for individual blog listing
+                  return (
+                    <article className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <Link href={`/posts/${slug}`}>
+                            <a className="mb-3 block">
+                              <img src={bannerImage} />
+                            </a>
+                        </Link>
+                        <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                          <Link href={`/posts/${slug}`}>
+                            <a>{title}</a>
+                          </Link>
+                        </h2>
+                        <p className="mb-5 font-light">
+                          {excerpt}
+                        </p>
+                        <div className="flex justify-between items-center">
+                          <Link href={`/posts/${slug}`}>
+                            <a
+                              className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                            >
+                              Read more
+                              <svg
+                                className="ml-2 w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                  clipRule="evenodd"
+                                />
+                              </svg>
+                            </a>
+                          </Link>
+                          <span className="text-sm text-gray-500 dark:text-gray-400">{date}</span>
+                        </div>
+                      </article>
+
+                    //   <article key={title}>
+                    //     <Link href={`/posts/${slug}`}>
+                    //       <h1>{title}</h1>
+                    //     </Link>
+                    //     <h3>{author}</h3>
+                    //     <h3>{date}</h3>
+                    //   </article>
+                  );
+                })}
+              </main>
+          </div>
+        </div>
+      </section>
+      <section id="features" className="py-10 min-h-screen flex items-center bg-gradient-to-b from-purple to-black">
+        <div className="max-w-[1600px] w-full mx-auto px-3">
+            <h2 className="text-white text-3xl lg:text-4xl font-bold mb-10 lg:mb-20 text-center">All The Features You Will Ever Need</h2>
+            <div className="flex flex-wrap justify-center">
+                {features.map((item, index) => (
+                    <div className={`${item.extraClasses} w-[100%] sm:w-[calc(100%/2)] md:w-[calc(100%/3)] lg:w-[calc(100%/5)] px-3 mb-7 lg:mb-0`}  key={index}>
+                        <div className="border rounded-2xl h-full py-6 px-4 text-center transition-all duration-300 hover:translate-y-3">
+                            <h3 className="font-bold text-white text-xl mb-3">{item.title}</h3>
+                            <p className="text-sm text-white">{item.desc}</p>
+                        </div>
                     </div>
-                  </article>
-
-                //   <article key={title}>
-                //     <Link href={`/posts/${slug}`}>
-                //       <h1>{title}</h1>
-                //     </Link>
-                //     <h3>{author}</h3>
-                //     <h3>{date}</h3>
-                //   </article>
-              );
-            })}
-          </main>
+                ))}
+            </div>
         </div>
       </section>
     </>

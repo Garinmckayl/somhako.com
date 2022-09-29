@@ -10,10 +10,10 @@ export default function Post({ frontmatter, content }) {
     <>
       <article className="max-w-[1000px] px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
         <div className="w-full mx-auto space-y-4 text-center">
-          <h1 className="text-4xl font-bold leading-tight md:text-5xl">
+          <h1 className="text-4xl text-white font-bold leading-tight md:text-5xl">
             {title}
           </h1>
-          <p className="text-sm dark:text-gray-400">
+          <p className="text-sm text-white">
             <span className="mr-1">by</span>
             <a
               rel="noopener noreferrer"
@@ -28,7 +28,7 @@ export default function Post({ frontmatter, content }) {
           </p>
           <img src={bannerImage} className="w-full" />
         </div>
-        <article className="blogSummay" dangerouslySetInnerHTML={{ __html: md().render(content) }} ></article>
+        <article className="blogSummay text-white" dangerouslySetInnerHTML={{ __html: md().render(content) }} ></article>
       </article>
     </>
   );
