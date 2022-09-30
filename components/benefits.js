@@ -12,7 +12,7 @@ export default function Benefits(props) {
           className={`flex items-center justify-center w-full lg:w-1/2 ${
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}>
-          <div>
+          <div className="max-w-[400px] m-auto">
             <Image
               src={data.image}
             />

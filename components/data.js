@@ -2,7 +2,7 @@ import {
   ChevronDoubleRightIcon,
 } from "@heroicons/react/outline";
 
-import protocolsvg from "../public/img/cube.png";
+import protocolsvg from "../public/img/network.png";
 
 const protocolsData = {
   image: protocolsvg,
