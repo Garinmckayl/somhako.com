@@ -1,59 +1,68 @@
-import SectionTitle from "../components/sectionTitle";
-import { protocolsData } from "../components/data";
-import Benefits from "../components/benefits";
+import { ChevronDoubleRightIcon, } from "@heroicons/react/outline";
+import Features from "../components/features";
+import React from "react";
 
 export default function Protocol() {
-  const features = [
+  const protocols = [
     {
-      title: "All The Features You Will Ever Need",
-      desc: "Connect with an amazing tech community and build teams globally. Let candidates learn, refer, and get rewarded for every action they take.",
-      extraClasses: 'lg:mt-[150px]',
+      desc: "By using Somhako protocol, users can create digital résumés on the blockchain, and data on the blockchain can be aggregated and used by other applications.",
+      icon: <ChevronDoubleRightIcon />,
     },
     {
-        title: "Smart AI-based Matchmaking",
-        desc: "Get matched with the right candidates, without worrying about the authenticity of their details. Our AI analyzes the resumes and finds the ideal candidates for the role, saving you hours of time.",
-        extraClasses: 'lg:mt-[75px]',
+      desc: "Developers can integrate Somhako Protocol to import somhako existing networks. Developers may concentrate on providing an outstanding user experience and leave growth hacking to the protocol!",
+      icon: <ChevronDoubleRightIcon />,
     },
     {
-        title: "Trust The Blockchain",
-        desc: "Every candidate's data is stored on our blockchain network. Access verified details and incentivize candidates directly—no intermediary, more control.",
-        extraClasses: '',
+      desc: "Somhako protocol unlocks portability and composability across the industry.",
+      icon: <ChevronDoubleRightIcon />,
     },
     {
-        title: "Share Data, On Demand",
-        desc: "By revealing your profile identity, engaging, referring, and learning, users can earn reward.",
-        extraClasses: 'lg:mt-[75px]',
+      desc: "The Somhako Protocol unites entire HR industry. This protocol is designed to help HR professionals establish a one-stop shop for their enterprise-wide hiring process. It applies a more personal approach to recruitment and focuses on hiring individuals that are aligned with the organization's vision, culture, purpose and values.",
+      icon: <ChevronDoubleRightIcon />,
     },
-    {
-        title: "Access Talents, Your Way",
-        desc: "Integrate Somhako Protocol and import all our existing networks to your platform. Let us handle the growth hacking while you focus on the user experience.",
-        extraClasses: 'lg:mt-[150px]',
-    },
-];
+  ];
   return (
     <>
-      <SectionTitle
-        title="Protocol"
-        idName="recruitment"
-      >
-        Somhako protocol enables platforms to import existing Somhako networks. Developers may concentrate on providing an outstanding user experience, and leave growth hacking to the protocol!
-      </SectionTitle>
-      <Benefits data={protocolsData} />
-      <section id="features" className="py-10 min-h-screen flex items-center bg-gradient-to-b from-purple to-black">
-        <div className="max-w-[1600px] w-full mx-auto px-3">
-            <h2 className="text-white text-3xl lg:text-4xl font-bold mb-10 lg:mb-20 text-center">All The Features You Will Ever Need</h2>
-            <div className="flex flex-wrap justify-center">
-                {features.map((item, index) => (
-                    <div className={`${item.extraClasses} w-[100%] sm:w-[calc(100%/2)] md:w-[calc(100%/3)] lg:w-[calc(100%/5)] px-3 mb-7 lg:mb-0`}  key={index}>
-                        <div className="border rounded-2xl h-full py-6 px-4 text-center transition-all duration-300 hover:translate-y-3">
-                            <h3 className="font-bold text-white text-xl mb-3">{item.title}</h3>
-                            <p className="text-sm text-white">{item.desc}</p>
-                        </div>
+      <section className="py-10">
+        <div className="max-w-[700px] mx-auto px-3 text-center">
+          <h1 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">
+          Protocol
+          </h1>
+          <p className="font-light text-white sm:text-xl">
+          Somhako protocol enables platforms to import existing Somhako networks. Developers may concentrate on providing an outstanding user experience, and leave growth hacking to the protocol!
+          </p>  
+        </div>
+      </section>
+      <section className="py-20">
+        <div className="container mx-auto px-3 flex flex-wrap items-center justify-center">
+            <div className="lg:w-6/12">
+                <div className="relative mb-10 lg:mb-0 max-w-[500px] mx-auto">
+                    <img src="/img/network.png" />
+                </div>
+            </div>
+            <div className="lg:w-6/12">
+              <ul>
+                <li>
+                  {protocols.map((item, index) => (
+                    <div className="flex items-start mt-8 space-x-3">
+                      <div className="flex items-center justify-center flex-shrink-0 mt-2 bg-white rounded-md w-9 h-9">
+                        {React.cloneElement(item.icon, {
+                          className: "w-5 h-5 text-black",
+                        })}
+                      </div>
+                      <div>
+                        <p className="mt-1 text-white">
+                        {item.desc}
+                        </p>
+                      </div>
                     </div>
-                ))}
+                  ))}
+                </li>
+              </ul>
             </div>
         </div>
       </section>
+      <Features />
     </>
   );
 }

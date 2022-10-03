@@ -4,8 +4,8 @@ import { Disclosure} from "@headlessui/react";
 export default function Navbar() {
   const navigation = [
     {
-      name: "Recruitment",
-      link: "/#recruitment"
+      name: "Resources",
+      link: "/#resources"
     },
     {
       name: "Features",
@@ -18,11 +18,7 @@ export default function Navbar() {
     {
       name: "Blog",
       link: "/blog"
-    },
-    {
-        name: "Career",
-        link: "/"
-      }
+    }
   ];
   return (
     <>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Features from "../components/features";
 
 export default function Home() {
   const features = [
@@ -78,7 +79,7 @@ export default function Home() {
             </div>
         </div>
       </section>
-      <section id="recruitment" className="py-10 min-h-screen flex items-center bg-gradient-to-tr from-blue via-indigo to-black">
+      <section id="resources" className="py-20 flex items-center bg-gradient-to-tr from-blue via-indigo to-black">
         <div className="container mx-auto px-3 flex flex-wrap items-center justify-center">
             <div className="lg:w-2/5">
                 <div className="relative mb-10 lg:mb-0 max-w-[500px] mx-auto">
@@ -94,22 +95,8 @@ export default function Home() {
             </div>
         </div>
       </section>
-      <section id="features" className="py-10 min-h-screen flex items-center bg-gradient-to-b from-purple to-black">
-        <div className="max-w-[1600px] w-full mx-auto px-3">
-            <h2 className="text-white text-3xl lg:text-4xl font-bold mb-10 lg:mb-20 text-center">All The Features You Will Ever Need</h2>
-            <div className="flex flex-wrap justify-center">
-                {features.map((item, index) => (
-                    <div className={`${item.extraClasses} w-[100%] sm:w-[calc(100%/2)] md:w-[calc(100%/3)] lg:w-[calc(100%/5)] px-3 mb-7 lg:mb-0`}  key={index}>
-                        <div className="border rounded-2xl h-full py-6 px-4 text-center transition-all duration-300 hover:translate-y-3">
-                            <h3 className="font-bold text-white text-xl mb-3">{item.title}</h3>
-                            <p className="text-sm text-white">{item.desc}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-      </section>
-      <section className="py-10 min-h-screen flex items-center bg-gradient-to-tr from-blue via-indigo to-black">
+      <Features />
+      <section className="py-20 flex items-center bg-gradient-to-tr from-blue via-indigo to-black">
         <div className="container w-full mx-auto px-3 flex flex-wrap items-center justify-center flex-col-reverse lg:flex-row">
             <div className="lg:w-6/12 lg:pr-10 text-center lg:text-left">
                 <h2 className="text-white text-4xl font-bold mb-4">Unlock Portability Across The Industry</h2>
