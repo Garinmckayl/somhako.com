@@ -24,7 +24,7 @@ export default function Post({ frontmatter, content }) {
               <span>{author}</span>
             </a>
             <span className="mr-1">on</span>
-            <time datetime="2021-02-12 15:34:18-0200">{date}</time>
+            <time dateTime="2021-02-12 15:34:18-0200">{date}</time>
           </p>
           <img src={bannerImage} className="w-full" />
         </div>

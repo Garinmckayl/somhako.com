@@ -19,11 +19,11 @@ export default function Blog({ posts }) {
       <section className="py-20">
         <div className="container mx-auto px-3">
           <main className="grid gap-8 lg:grid-cols-3">
-              {posts.map((post) => {
+              {posts.map((post, index) => {
                 const { slug, frontmatter } = post;
                 const { title, author, category, date, excerpt, bannerImage, tags } = frontmatter;
                 return (
-                  <article className="p-6 bg-white rounded-lg">
+                  <article className="p-6 rounded-lg bg-gradient-to-br from-purple-500 to-white" key={index}>
                       <Link href={`/posts/${slug}`}>
                           <a className="mb-3 block">
                             <img src={bannerImage} />

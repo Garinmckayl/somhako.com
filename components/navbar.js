@@ -18,6 +18,14 @@ export default function Navbar() {
     {
       name: "Blog",
       link: "/blog"
+    },
+    {
+      name: "Career",
+      link: "https://advantf.com/recruitment/"
+    },
+    {
+      name: "Whitepaper",
+      link: "/whitepaper"
     }
   ];
   return (
