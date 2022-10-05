@@ -37,7 +37,8 @@ export default function Protocol() {
         <div className="container mx-auto px-3 flex flex-wrap items-center justify-center">
             <div className="lg:w-6/12">
                 <div className="relative mb-10 lg:mb-0 max-w-[500px] mx-auto">
-                    <img src="/img/network.png" />
+                    <img src="/img/network.png" className="rotateAnimation-X" />
+                    <img src="/img/network.png" className="rotateAnimation-Y absolute left-0 top-0" />
                 </div>
             </div>
             <div className="lg:w-6/12">

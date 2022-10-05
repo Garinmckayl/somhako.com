@@ -31,7 +31,7 @@ export default function Home() {
   ];
   return (
     <>
-      <section className="py-10 min-h-screen flex items-center">
+      <section className="py-20 flex items-center min-h-[80vh]">
         <div className="container mx-auto px-3 flex flex-wrap items-center flex-col-reverse lg:flex-row">
             <div className="lg:w-1/2 text-center lg:text-left">
                 <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
@@ -47,7 +47,7 @@ export default function Home() {
                 </Link>
             </div>
             <div className="lg:w-1/2">
-                <div className="scene">
+                <div className="scene mx-auto mb-10 lg:mb-0">
                     <div className="wrapper">
                         <ul className="ball">
                         <li className="ring"></li>
