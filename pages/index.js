@@ -31,7 +31,7 @@ export default function Home() {
   ];
   return (
     <>
-      <section className="py-20 min-h-screen flex items-center min-h-[80vh]">
+      <section className="py-20 min-h-screen flex items-center">
         <div className="container mx-auto px-3 flex flex-wrap items-center flex-col-reverse lg:flex-row">
             <div className="lg:w-1/2 text-center lg:text-left">
                 <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
