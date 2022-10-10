@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
@@ -8,6 +9,15 @@ export default function Post({ frontmatter, content }) {
 
   return (
     <>
+    <Head>
+        <title>
+        {title} | Somhako
+        </title>
+        <meta
+        name="description"
+        content="Make your job search easier with trackable resumes and enhanced applications."
+        />
+      </Head>
       <article className="max-w-[1000px] px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
         <div className="w-full mx-auto space-y-4 text-center">
           <h1 className="text-4xl text-white font-bold leading-tight md:text-5xl">

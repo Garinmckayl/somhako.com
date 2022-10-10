@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { ChevronDoubleRightIcon, } from "@heroicons/react/outline";
 import Features from "../components/features";
 import React from "react";
@@ -23,6 +24,15 @@ export default function Protocol() {
   ];
   return (
     <>
+      <Head>
+        <title>
+        Protocol | Somhako
+        </title>
+        <meta
+        name="description"
+        content="Make your job search easier with trackable resumes and enhanced applications."
+        />
+      </Head>
       <section className="py-10">
         <div className="max-w-[700px] mx-auto px-3 text-center">
           <h1 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">

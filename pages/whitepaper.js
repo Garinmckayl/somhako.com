@@ -1,7 +1,17 @@
+import Head from 'next/head';
 
 export default function Whitepaper() {
     return (
       <>
+      <Head>
+        <title>
+        Whitepaper | Somhako
+        </title>
+        <meta
+        name="description"
+        content="Make your job search easier with trackable resumes and enhanced applications."
+        />
+      </Head>
           <div className="py-10">
               <div className="container mx-auto">
                   <h1 className="mb-5 text-3xl text-center lg:text-4xl tracking-tight font-extrabold text-white">

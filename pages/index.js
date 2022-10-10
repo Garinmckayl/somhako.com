@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from "next/link";
 import Features from "../components/features";
 
@@ -31,6 +32,15 @@ export default function Home() {
   ];
   return (
     <>
+      <Head>
+        <title>
+        Discover, Connect & Network
+        </title>
+        <meta
+        name="description"
+        content="Make your job search easier with trackable resumes and enhanced applications."
+        />
+      </Head>
       <section className="py-20 min-h-screen flex items-center">
         <div className="container mx-auto px-3 flex flex-wrap items-center flex-col-reverse lg:flex-row">
             <div className="lg:w-1/2 text-center lg:text-left">

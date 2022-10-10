@@ -35,6 +35,13 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>
+          Somhako
+          </title>
+          <meta
+            name="description"
+            content="Make your job search easier with trackable resumes and enhanced applications."
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
             rel="stylesheet"
