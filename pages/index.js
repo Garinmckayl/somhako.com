@@ -157,7 +157,7 @@ export default function Home() {
             <div className="flex flex-wrap m">
                 {stayConnected.map((item, index) => (
                     <div className="w-full md:w-4/12 px-3 mb-5" key={index}>
-                        <a href="https://www.linkedin.com/company/somhako/?viewAsMember=true" target="_blank" className="flex items-center justify-center flex-col border rounded-lg min-h-[200px] lg:min-h-[350px] py-6 px-4 transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500">
+                        <a href={item.url} target="_blank" className="flex items-center justify-center flex-col border rounded-lg min-h-[200px] lg:min-h-[350px] py-6 px-4 transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500">
                             {item.icon}
                             {/* <a className="mt-5 block min-w-[200px] text-center py-2 px-4 text-sm rounded font-bold text-white bg-gradient-to-r from-purple-700 to-blue-700 hover:from-blue-900 hover:to-purple-900">{item.name}</a> */}
                         </a>
