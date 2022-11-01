@@ -53,7 +53,7 @@ export default function Navbar() {
                   </li>
                   ))}
               </ul>
-              <Link href="https://marketplace.somhako.com/register/">
+              <Link href="https://marketplace.somhako.com/candidate">
                   <a className="inline-block py-2 px-4 text-sm rounded font-bold text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-500 hover:to-purple-500">
                   Sign Up Now
                   </a>
@@ -111,7 +111,7 @@ export default function Navbar() {
                           </li>
                           ))}
                       </ul>
-                      <Link href="https://marketplace.somhako.com/register/">
+                      <Link href="https://marketplace.somhako.com/candidate">
                           <a className="inline-block py-2 px-4 text-sm rounded font-bold text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-500 hover:to-purple-500">
                           Sign Up Now
                           </a>

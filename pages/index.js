@@ -58,7 +58,7 @@ export default function Home() {
                 <p className="text-xl text-white mb-6">
                 Don't let your competitors steal the deal. Connect with our global talent network and hire the right one. 
                 </p>
-                <Link href="https://marketplace.somhako.com/register/">
+                <Link href="https://marketplace.somhako.com/organisation/">
                     <a className="inline-block py-2 px-4 text-sm rounded font-bold text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-500 hover:to-purple-500">
                     Get Started
                     </a>
@@ -120,7 +120,7 @@ export default function Home() {
                 <h2 className="text-white text-4xl font-bold mb-4">Unlock Portability Across The Industry</h2>
                 <p className="text-white text-xl mb-4">Aggregate verified candidate data from our blockchain network and use it across your application. The Somhako protocol enables HR professionals to establish one-stop recruitment for enterprise-wide hiring. Get a more personal touch on your recruitment and onboard individuals who align with your organization's vision, values, and purpose.</p>
                 <p className="text-white text-xl mb-4 italic font-bold">Don't let resources stop you from hiring the best. Let Somhako help you hire today for free!</p>
-                <Link href="https://marketplace.somhako.com/register/">
+                <Link href="https://marketplace.somhako.com/candidate">
                     <a className="inline-block py-2 px-4 text-sm rounded font-bold text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-500 hover:to-purple-500">
                     Sign Up Now
                     </a>
